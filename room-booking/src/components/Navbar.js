@@ -5,6 +5,13 @@ import logo from "../logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 
+import jquery from 'jquery';
+
+// for changing navbar  color
+jquery(window).scroll(function() {
+jquery('nav').toggleClass('scrolled', jquery(this).scrollTop() > 0);
+})
+
 
 function Navbar() {
   return (
@@ -25,11 +32,11 @@ function Navbar() {
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav ml-auto">
       <li className="nav-item active">
-        <a className="nav-link" href="/some/valid/uri">Home</a>
+        <a className="nav-link" href="/some/valid/uri#top">Home</a>
       </li>
       
       <li className="nav-item">
-        <a className="nav-link" href="/some/valid/uri#top">Packages</a>
+        <a className="nav-link" href="/some/valid/uri#top">Rooms</a>
         
       </li>
       <li className="nav-item">
@@ -38,19 +45,9 @@ function Navbar() {
       </li>
     
       <li className="nav-item">
-        <a className="nav-link" href="/some/valid/uri#top">Review</a>
-        
+        <a className="nav-link" href="/some/valid/uri#top">ContactUs</a>
+      
       </li>
-      
-    
-    <li className="nav-item">
-      <a className="nav-link" href="/some/valid/uri#top">Contact</a>
-      
-    </li>
-    <li className="nav-item">
-      <a className="nav-link" href="/some/valid/uri#top">Book</a>
-      
-    </li>
     </ul>  
   </div>
 </nav>

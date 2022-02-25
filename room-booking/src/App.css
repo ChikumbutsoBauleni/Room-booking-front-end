@@ -7,7 +7,7 @@
     --primary-dark: rgba(255,255,255,0);
 }
 body{
-    font-family: "Roboto Condensed" sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 /********************navgation bar************/
 .logo{
@@ -15,7 +15,7 @@ body{
 }
 /*---------------MENU---------------*/
 nav a.nav-link{
-    font-weight: 4rem;
+    font-weight: 3rem;
     letter-spacing: 0.05525rem;
     cursor: pointer ;
 }
@@ -37,4 +37,25 @@ nav ul li{
 }
 .navbar-nav>li>a.hover{
     border-top: 0.1734rem solid var(--primary-orange);
+}
+
+
+/*************************HEADER*******************************/
+.header-wraper{
+     position: relative;
+     background: url(background.jpg) no-repeat;
+     background-size: cover ;
+     background-position: center;
+     height: 90vh;
+}
+.main-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.main-info h1{
+    color: var(--primary-orange);
 }
